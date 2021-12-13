@@ -17,7 +17,7 @@ body{
         "main"
         "shop"
         "vej-viser"
-        "investering"
+        "smykkepleje"
         "footer"
     ;
 }
@@ -47,10 +47,10 @@ main{
     align-items: center;
     justify-content: center;
 }
-#investering{
+#smykkepleje{
     background-image: url('../img/rings-bg.jpg');
     background-size: cover;
-    grid-area: investering;
+    grid-area: smykkepleje;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,12 +154,12 @@ button{
     margin-bottom: 1em;
     text-align: center;
 }
-#investering h1{
+#smykkepleje h1{
     font-size: 45px;
     font-weight: 500;
     color: #4A4C72;
 }
-#investering p{
+#smykkepleje p{
     color: #B09561;
     margin: 2em 0;
     text-align: center;
@@ -193,4 +193,7 @@ footer .mid p{
 }
 .bot{
     padding: 0 5em 0 5em;
+}
+video{
+    margin: 4em auto;
 }
