@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #F6F0E7;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 10vh 90vh 60vh 40vh 60vh 55vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "shop"
+        "vej-viser"
+        "investering"
+        "footer"
+    ;
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    display: flex;
+    margin: auto;
+}
+#shop{
+    grid-area: shop;
+}
+#vej-viser{
+    background-color: #4A4C72;
+    grid-area: vej-viser;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#investering{
+    background-image: url('../img/rings-bg.jpg');
+    background-size: cover;
+    grid-area: investering;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: #4A4C72;
+    grid-area: footer;
+
+}
+#logo{
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+    color: #B09561;
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li{
+    padding: 0 .7em;
+    font-weight: 600;
+    color: #4A4C72;
+}
+#kurv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+    margin: auto;
+}
+.main-text h2{
+    font-size: 42px;
+    color: #B09561;
+    font-family: 'Noto Serif', serif;
+    font-weight: 100;
+}
+.main-text h1{
+    font-size: 57px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px #D5BA8F;
+    width: 672px;
+    margin: .2em 0 1em 0;
+}
+button{
+    width: 190px;
+    height: 53px;
+    background-color: #D5BA8F;
+    color: #FFFFFF;
+    border: none;
+}
+.img-hero{
+    width: 674px;
+}
+.img-hero img{
+    width: 100%;
+}
+#shop{
+    text-align: center;
+}
+.shop-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+.item{
+    width: 370px;
+}
+.item img{
+    width: 100%;
+}
+.shops{
+    margin-top: 1em;
+}
+#shop h3{
+    color: #4A4C72;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 1em;
+}
+#shop p{
+    color: #B09561;
+    font-size: 12px;
+}
+#shop .p-blue{
+    color: #4A4C72;
+    font-size: 16px;
+    font-weight: 500;
+}
+#shop .p-gold{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+#vej-viser h2{
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#investering h1{
+    font-size: 45px;
+    font-weight: 500;
+    color: #4A4C72;
+}
+#investering p{
+    color: #B09561;
+    margin: 2em 0;
+    text-align: center;
+}
+.socials{
+    display: flex;
+    margin-top: .5em;
+}
+.maps{
+    width: 462px;
+}
+footer h3{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: .5em;
+}
+footer p{
+    color: #B09561;
+    font-size: 17px;
+    line-height: 2em;
+}
+footer .mid p{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 5em 0 5em;
+}
+.bot{
+    padding: 0 5em 0 5em;
+}

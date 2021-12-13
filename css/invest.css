@@ -1,0 +1,38 @@
+.wrapper{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 10vh 35vh auto 55vh;
+    grid-template-areas:
+        "header"
+        "title"
+        "article"
+        "footer"
+    ;
+}
+#title-header{
+    grid-area: title;
+    background-image: url("../img/article-bg.png");
+    background-size: cover;
+    display: flex;
+    margin-bottom: 3em;
+}
+#title-header h1{
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    font-weight: 500;
+}
+article{
+    margin-bottom: 10em;
+}
+article p{
+    color: #B09561;
+    margin: 2em 0;
+}
+article h2{
+    margin: 1.5em 0 .3em 0;
+    color: #4A4C72;
+    font-size: 40px;
+}
