@@ -130,5 +130,22 @@
             </div>
         </footer>
     </div>
+    <script>
+        //Vælger elementet fra html
+        let element = document.querySelector(".find");
+
+        //Lytter efter om musen er over elementet
+        element.addEventListener('mouseenter', () =>{
+        //Viser det valgte element
+        document.querySelector('.popup').style.display = "block";
+        });
+
+        //Lytter efter om musen er over elementet
+        element.addEventListener('mouseleave', () =>{
+        //Skjuler det valgte element
+        document.querySelector('.popup').style.display = "none";
+        });
+    </script>
+
 </body>
 </html>
