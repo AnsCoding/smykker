@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #F6F0E7;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 10vh 90vh 60vh 40vh 60vh 55vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "shop"
+        "vej-viser"
+        "smykkepleje"
+        "footer"
+    ;
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    display: flex;
+    margin: auto;
+}
+#shop{
+    grid-area: shop;
+}
+#vej-viser{
+    background-color: #4A4C72;
+    grid-area: vej-viser;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#smykkepleje{
+    background-image: url('../img/rings-bg.jpg');
+    background-size: cover;
+    grid-area: smykkepleje;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: #4A4C72;
+    grid-area: footer;
+
+}
+#logo{
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+    color: #B09561;
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li{
+    padding: 0 .7em;
+    font-weight: 600;
+    color: #4A4C72;
+}
+#kurv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+    margin: auto;
+}
+.main-text h2{
+    font-size: 42px;
+    color: #B09561;
+    font-family: 'Noto Serif', serif;
+    font-weight: 100;
+}
+.main-text h1{
+    font-size: 57px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px #D5BA8F;
+    width: 672px;
+    margin: .2em 0 1em 0;
+}
+button{
+    width: 190px;
+    height: 53px;
+    background-color: #D5BA8F;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.img-hero{
+    width: 674px;
+}
+.img-hero img{
+    width: 100%;
+}
+#shop{
+    text-align: center;
+}
+.shop-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+
+
+
+
+.item{
+    width: 370px;
+}
+.flip-card-front img{
+    width: 100%;
+}
+
+
+.shops{
+    margin-top: 1em;
+}
+#shop h3{
+    color: #4A4C72;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 1em;
+}
+#shop p{
+    color: #B09561;
+    font-size: 12px;
+}
+#shop .p-blue{
+    color: #4A4C72;
+    font-size: 16px;
+    font-weight: 500;
+}
+#shop .p-gold{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+#vej-viser h2{
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#smykkepleje h1{
+    font-size: 45px;
+    font-weight: 500;
+    color: #4A4C72;
+}
+#smykkepleje p{
+    color: #B09561;
+    margin: 2em 0;
+    text-align: center;
+}
+.socials{
+    display: flex;
+    margin-top: .5em;
+}
+.maps{
+    width: 462px;
+    border-right: 15px solid #B09561;
+    border-bottom: 15px solid #B09561;
+}
+footer h3{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: .5em;
+}
+footer p{
+    color: #B09561;
+    font-size: 17px;
+    line-height: 2em;
+}
+footer .mid p{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 5em 0 5em;
+}
+.bot{
+    padding: 0 5em 0 5em;
+}
+video{
+    margin: 4em auto;
+}
+.popup{
+    display: none;
+    border: 1em solid #D5BA8F;
+}
+
+#consent-popup{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 8rem;
+    background-color: #D5BA8F;
+    transition: opacity 1s ease;
+    text-align: center;
+    color: #FFFFFF;
+}
+#accept{
+    color: #4A4C72;
+    font-weight: bold;
+    margin-left: 2em;
+}
+.hidden{
+    opacity: 0;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 370px;
+    height: 370px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 370px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 370px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #D5BA8F;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip-card-front img{
+    width: 100%;
+}
+
+.item-info h3{
+    margin-top: 0 !important
+}
